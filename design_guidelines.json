@@ -1,0 +1,138 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "LLMMatch",
+      "persona": "E1 - The Anti-AI Designer",
+      "vibe": "Cyber-Tactical, High-Precision, Developer-First",
+      "core_principles": [
+        "Density over Fluff: Developers want data, not whitespace.",
+        "Visual Hierarchy via Contrast: Use light vs dark, not just size.",
+        "Motion as Feedback: Every interaction has a micro-reaction.",
+        "The 'Obsidian' Aesthetic: Deepest navy backgrounds, glowing accents."
+      ]
+    },
+    "colors": {
+      "palette": {
+        "background": "#07080f",
+        "card": "#0e101a",
+        "text": {
+          "primary": "#dde1f5",
+          "secondary": "#94a3b8",
+          "muted": "#475569"
+        },
+        "accent": {
+          "purple": "#7c6aff",
+          "teal": "#00e5b0",
+          "cyan": "#06b6d4"
+        },
+        "border": "rgba(255, 255, 255, 0.08)",
+        "success": "#00e5b0",
+        "error": "#ef4444"
+      },
+      "tailwind_config": {
+        "css_variables": {
+          "--background": "234 38% 4%",
+          "--foreground": "230 40% 91%",
+          "--card": "230 30% 8%",
+          "--card-foreground": "230 40% 91%",
+          "--popover": "230 30% 8%",
+          "--popover-foreground": "230 40% 91%",
+          "--primary": "247 100% 71%",
+          "--primary-foreground": "234 38% 4%",
+          "--secondary": "166 100% 45%",
+          "--secondary-foreground": "234 38% 4%",
+          "--muted": "230 30% 15%",
+          "--muted-foreground": "215 16% 65%",
+          "--accent": "247 100% 71%",
+          "--accent-foreground": "234 38% 4%",
+          "--border": "230 30% 15%",
+          "--input": "230 30% 15%",
+          "--ring": "247 100% 71%"
+        }
+      }
+    },
+    "typography": {
+      "fonts": {
+        "heading": "Space Grotesk, sans-serif",
+        "body": "Inter, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "rules": [
+        "Headings (H1-H3): Space Grotesk. Tight tracking (-0.02em). Bold (700).",
+        "Body: Inter. Normal tracking. Weights: 400 (regular), 500 (medium).",
+        "Data/Code: JetBrains Mono. Use for scores, parameters, and prices."
+      ],
+      "install_instructions": "Import 'Space Grotesk', 'Inter', and 'JetBrains Mono' from Google Fonts in index.css"
+    },
+    "components": {
+      "buttons": {
+        "primary": "bg-[#7c6aff] hover:bg-[#6b5acd] text-[#07080f] font-bold rounded shadow-[0_0_15px_rgba(124,106,255,0.4)] transition-all hover:scale-105 active:scale-95",
+        "secondary": "border border-[#7c6aff] text-[#7c6aff] hover:bg-[#7c6aff]/10 bg-transparent rounded transition-all",
+        "ghost": "text-[#dde1f5] hover:text-white hover:bg-white/5 transition-colors"
+      },
+      "cards": {
+        "base": "bg-[#0e101a] border border-white/5 rounded-xl p-6 hover:border-[#7c6aff]/30 transition-colors shadow-lg shadow-black/50",
+        "hero_result": "bg-gradient-to-b from-[#1a1d2d] to-[#0e101a] border border-[#7c6aff] shadow-[0_0_30px_rgba(124,106,255,0.15)] relative overflow-hidden",
+        "glass": "bg-[#0e101a]/80 backdrop-blur-md border border-white/10"
+      },
+      "inputs": {
+        "base": "bg-[#07080f] border border-white/10 text-[#dde1f5] focus:border-[#00e5b0] focus:ring-1 focus:ring-[#00e5b0] rounded-md transition-all placeholder:text-white/20"
+      },
+      "navigation": {
+        "style": "Floating glass header. Border-b border-white/5. Backdrop-blur-xl."
+      }
+    },
+    "layout_strategies": {
+      "grid_system": "Bento Grid (CSS Grid). Gaps: gap-6 or gap-8.",
+      "spacing": "Generous padding (p-8, p-12) to balance the dense data.",
+      "z_index": "Layered depth. Background glow (-1), Content (10), Sticky Nav (50), Modals (100)."
+    },
+    "motion": {
+      "library": "framer-motion",
+      "animations": {
+        "page_transition": "opacity: 0 -> 1, y: 20 -> 0",
+        "stagger_list": "staggerChildren: 0.1",
+        "hover_card": "y: -5, shadow: 0 20px 40px rgba(0,0,0,0.4)",
+        "score_bar": "width: 0% -> value%, duration: 1.5, ease: 'easeOut'"
+      }
+    },
+    "assets": {
+      "images": [
+        {
+          "category": "hero_background",
+          "url": "https://images.pexels.com/photos/17485657/pexels-photo-17485657.png",
+          "description": "3D render abstract digital visualization depicting neural networks and AI technology. Use with low opacity overlay."
+        },
+        {
+          "category": "texture_abstract",
+          "url": "https://images.unsplash.com/photo-1647356191320-d7a1f80ca777",
+          "description": "Purple and blue abstract pattern. Use for section breaks or card backgrounds with heavy blur."
+        },
+        {
+          "category": "tech_detail",
+          "url": "https://images.unsplash.com/photo-1691435828932-911a7801adfb",
+          "description": "Close up of network wires. Use for 'Deployment' or 'Infrastructure' context."
+        }
+      ],
+      "icons": {
+        "library": "lucide-react",
+        "instructions": "Use thin stroke icons (stroke-width={1.5}) to match the elegant technical vibe."
+      }
+    },
+    "universal_guidelines": [
+      "DO NOT use gradients for text. It impairs readability.",
+      "DO NOT use generic centered layouts for data tables.",
+      "ALWAYS add 'data-testid' to interactive elements.",
+      "Use 'sonner' for toasts.",
+      "Ensure all text has adequate contrast against the #07080f background.",
+      "Use Skeleton loaders for async data states."
+    ]
+  },
+  "instructions_to_main_agent": {
+    "step_1": "Install 'framer-motion' and 'lucide-react' if not present.",
+    "step_2": "Update 'index.css' with the CSS variables provided in 'design_system.colors.tailwind_config'. Import Google Fonts.",
+    "step_3": "Create a 'Layout' component that enforces the dark theme and global font styles.",
+    "step_4": "Build the 'WizardForm' using a step-based state machine. Animate transitions between steps.",
+    "step_5": "Create the 'ResultCard' component with the glowing border effect defined in 'design_system.components.cards.hero_result'."
+  }
+}

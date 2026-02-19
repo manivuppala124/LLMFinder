@@ -1,0 +1,5 @@
+/* App-level styles — theme is driven by index.css */
+.App {
+  min-height: 100vh;
+  background-color: #07080f;
+}

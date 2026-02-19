@@ -1,0 +1,382 @@
+[
+  {
+    "name": "GPT-4o",
+    "provider": "OpenAI",
+    "cost_input_per_1m": 5.0,
+    "cost_output_per_1m": 15.0,
+    "context_window": 128000,
+    "latency_class": "realtime",
+    "deployment": "cloud",
+    "task_scores": {
+      "code": 0.92,
+      "chat": 0.95,
+      "summarize": 0.93,
+      "analysis": 0.94,
+      "translation": 0.90,
+      "rag": 0.92
+    },
+    "tags": ["flagship", "multimodal", "vision"],
+    "link": "https://platform.openai.com/docs/models/gpt-4o"
+  },
+  {
+    "name": "GPT-4o-mini",
+    "provider": "OpenAI",
+    "cost_input_per_1m": 0.15,
+    "cost_output_per_1m": 0.60,
+    "context_window": 128000,
+    "latency_class": "realtime",
+    "deployment": "cloud",
+    "task_scores": {
+      "code": 0.88,
+      "chat": 0.90,
+      "summarize": 0.87,
+      "analysis": 0.88,
+      "translation": 0.85,
+      "rag": 0.87
+    },
+    "tags": ["budget", "fast", "popular"],
+    "link": "https://platform.openai.com/docs/models/gpt-4o-mini"
+  },
+  {
+    "name": "GPT-3.5-turbo",
+    "provider": "OpenAI",
+    "cost_input_per_1m": 0.50,
+    "cost_output_per_1m": 1.50,
+    "context_window": 16385,
+    "latency_class": "realtime",
+    "deployment": "cloud",
+    "task_scores": {
+      "code": 0.75,
+      "chat": 0.82,
+      "summarize": 0.78,
+      "analysis": 0.74,
+      "translation": 0.76,
+      "rag": 0.72
+    },
+    "tags": ["legacy", "budget", "fast"],
+    "link": "https://platform.openai.com/docs/models/gpt-3-5-turbo"
+  },
+  {
+    "name": "Claude 3.5 Sonnet",
+    "provider": "Anthropic",
+    "cost_input_per_1m": 3.0,
+    "cost_output_per_1m": 15.0,
+    "context_window": 200000,
+    "latency_class": "moderate",
+    "deployment": "cloud",
+    "task_scores": {
+      "code": 0.93,
+      "chat": 0.94,
+      "summarize": 0.95,
+      "analysis": 0.96,
+      "translation": 0.88,
+      "rag": 0.94
+    },
+    "tags": ["flagship", "long-context", "code"],
+    "link": "https://www.anthropic.com/claude/sonnet"
+  },
+  {
+    "name": "Claude 3 Haiku",
+    "provider": "Anthropic",
+    "cost_input_per_1m": 0.25,
+    "cost_output_per_1m": 1.25,
+    "context_window": 200000,
+    "latency_class": "realtime",
+    "deployment": "cloud",
+    "task_scores": {
+      "code": 0.78,
+      "chat": 0.82,
+      "summarize": 0.83,
+      "analysis": 0.80,
+      "translation": 0.78,
+      "rag": 0.80
+    },
+    "tags": ["budget", "fast", "long-context"],
+    "link": "https://www.anthropic.com/claude/haiku"
+  },
+  {
+    "name": "Claude 3 Opus",
+    "provider": "Anthropic",
+    "cost_input_per_1m": 15.0,
+    "cost_output_per_1m": 75.0,
+    "context_window": 200000,
+    "latency_class": "moderate",
+    "deployment": "cloud",
+    "task_scores": {
+      "code": 0.90,
+      "chat": 0.92,
+      "summarize": 0.94,
+      "analysis": 0.96,
+      "translation": 0.87,
+      "rag": 0.92
+    },
+    "tags": ["premium", "long-context", "reasoning"],
+    "link": "https://www.anthropic.com/claude/opus"
+  },
+  {
+    "name": "Gemini 1.5 Pro",
+    "provider": "Google",
+    "cost_input_per_1m": 3.50,
+    "cost_output_per_1m": 10.50,
+    "context_window": 1000000,
+    "latency_class": "moderate",
+    "deployment": "cloud",
+    "task_scores": {
+      "code": 0.88,
+      "chat": 0.90,
+      "summarize": 0.92,
+      "analysis": 0.91,
+      "translation": 0.89,
+      "rag": 0.93
+    },
+    "tags": ["mega-context", "multimodal", "rag"],
+    "link": "https://ai.google.dev/gemini-api/docs/models/gemini"
+  },
+  {
+    "name": "Gemini 1.5 Flash",
+    "provider": "Google",
+    "cost_input_per_1m": 0.075,
+    "cost_output_per_1m": 0.30,
+    "context_window": 1000000,
+    "latency_class": "realtime",
+    "deployment": "cloud",
+    "task_scores": {
+      "code": 0.82,
+      "chat": 0.85,
+      "summarize": 0.84,
+      "analysis": 0.83,
+      "translation": 0.82,
+      "rag": 0.85
+    },
+    "tags": ["budget", "fast", "mega-context"],
+    "link": "https://ai.google.dev/gemini-api/docs/models/gemini"
+  },
+  {
+    "name": "Gemini 2.0 Flash",
+    "provider": "Google",
+    "cost_input_per_1m": 0.10,
+    "cost_output_per_1m": 0.40,
+    "context_window": 1000000,
+    "latency_class": "realtime",
+    "deployment": "cloud",
+    "task_scores": {
+      "code": 0.85,
+      "chat": 0.87,
+      "summarize": 0.86,
+      "analysis": 0.86,
+      "translation": 0.84,
+      "rag": 0.87
+    },
+    "tags": ["latest", "fast", "mega-context"],
+    "link": "https://ai.google.dev/gemini-api/docs/models/gemini-2"
+  },
+  {
+    "name": "Llama 3.1 70B",
+    "provider": "Meta",
+    "cost_input_per_1m": 0.90,
+    "cost_output_per_1m": 0.90,
+    "context_window": 128000,
+    "latency_class": "moderate",
+    "deployment": "both",
+    "task_scores": {
+      "code": 0.87,
+      "chat": 0.86,
+      "summarize": 0.85,
+      "analysis": 0.85,
+      "translation": 0.78,
+      "rag": 0.84
+    },
+    "tags": ["open-source", "local", "strong"],
+    "link": "https://llama.meta.com/llama3/"
+  },
+  {
+    "name": "Llama 3.1 8B",
+    "provider": "Meta",
+    "cost_input_per_1m": 0.20,
+    "cost_output_per_1m": 0.20,
+    "context_window": 128000,
+    "latency_class": "realtime",
+    "deployment": "both",
+    "task_scores": {
+      "code": 0.75,
+      "chat": 0.76,
+      "summarize": 0.72,
+      "analysis": 0.70,
+      "translation": 0.65,
+      "rag": 0.70
+    },
+    "tags": ["open-source", "local", "lightweight"],
+    "link": "https://llama.meta.com/llama3/"
+  },
+  {
+    "name": "Mistral 7B",
+    "provider": "Mistral",
+    "cost_input_per_1m": 0.25,
+    "cost_output_per_1m": 0.25,
+    "context_window": 32768,
+    "latency_class": "realtime",
+    "deployment": "both",
+    "task_scores": {
+      "code": 0.72,
+      "chat": 0.70,
+      "summarize": 0.68,
+      "analysis": 0.67,
+      "translation": 0.65,
+      "rag": 0.65
+    },
+    "tags": ["open-source", "local", "efficient"],
+    "link": "https://mistral.ai/technology/"
+  },
+  {
+    "name": "Mixtral 8x7B",
+    "provider": "Mistral",
+    "cost_input_per_1m": 0.60,
+    "cost_output_per_1m": 0.60,
+    "context_window": 32768,
+    "latency_class": "moderate",
+    "deployment": "both",
+    "task_scores": {
+      "code": 0.80,
+      "chat": 0.78,
+      "summarize": 0.77,
+      "analysis": 0.76,
+      "translation": 0.72,
+      "rag": 0.75
+    },
+    "tags": ["open-source", "MoE", "local"],
+    "link": "https://mistral.ai/technology/"
+  },
+  {
+    "name": "Mistral Large",
+    "provider": "Mistral",
+    "cost_input_per_1m": 4.0,
+    "cost_output_per_1m": 12.0,
+    "context_window": 128000,
+    "latency_class": "moderate",
+    "deployment": "cloud",
+    "task_scores": {
+      "code": 0.87,
+      "chat": 0.88,
+      "summarize": 0.87,
+      "analysis": 0.89,
+      "translation": 0.85,
+      "rag": 0.86
+    },
+    "tags": ["european", "strong", "multilingual"],
+    "link": "https://mistral.ai/technology/"
+  },
+  {
+    "name": "DeepSeek V2",
+    "provider": "DeepSeek",
+    "cost_input_per_1m": 0.14,
+    "cost_output_per_1m": 0.28,
+    "context_window": 128000,
+    "latency_class": "moderate",
+    "deployment": "both",
+    "task_scores": {
+      "code": 0.82,
+      "chat": 0.80,
+      "summarize": 0.78,
+      "analysis": 0.80,
+      "translation": 0.72,
+      "rag": 0.76
+    },
+    "tags": ["ultra-budget", "open-source", "MoE"],
+    "link": "https://www.deepseek.com/"
+  },
+  {
+    "name": "DeepSeek Coder V2",
+    "provider": "DeepSeek",
+    "cost_input_per_1m": 0.14,
+    "cost_output_per_1m": 0.28,
+    "context_window": 128000,
+    "latency_class": "moderate",
+    "deployment": "both",
+    "task_scores": {
+      "code": 0.96,
+      "chat": 0.65,
+      "summarize": 0.58,
+      "analysis": 0.78,
+      "translation": 0.55,
+      "rag": 0.70
+    },
+    "tags": ["code-specialist", "open-source", "ultra-budget"],
+    "link": "https://www.deepseek.com/"
+  },
+  {
+    "name": "Qwen 2.5 72B",
+    "provider": "Alibaba",
+    "cost_input_per_1m": 0.90,
+    "cost_output_per_1m": 0.90,
+    "context_window": 128000,
+    "latency_class": "moderate",
+    "deployment": "both",
+    "task_scores": {
+      "code": 0.85,
+      "chat": 0.83,
+      "summarize": 0.82,
+      "analysis": 0.83,
+      "translation": 0.85,
+      "rag": 0.80
+    },
+    "tags": ["open-source", "multilingual", "strong"],
+    "link": "https://huggingface.co/Qwen/Qwen2.5-72B-Instruct"
+  },
+  {
+    "name": "Command R+",
+    "provider": "Cohere",
+    "cost_input_per_1m": 3.0,
+    "cost_output_per_1m": 15.0,
+    "context_window": 128000,
+    "latency_class": "moderate",
+    "deployment": "cloud",
+    "task_scores": {
+      "code": 0.75,
+      "chat": 0.80,
+      "summarize": 0.82,
+      "analysis": 0.78,
+      "translation": 0.72,
+      "rag": 0.92
+    },
+    "tags": ["rag-specialist", "enterprise", "retrieval"],
+    "link": "https://cohere.com/command"
+  },
+  {
+    "name": "Phi-3 Mini",
+    "provider": "Microsoft",
+    "cost_input_per_1m": 0.13,
+    "cost_output_per_1m": 0.13,
+    "context_window": 128000,
+    "latency_class": "realtime",
+    "deployment": "both",
+    "task_scores": {
+      "code": 0.72,
+      "chat": 0.68,
+      "summarize": 0.65,
+      "analysis": 0.65,
+      "translation": 0.60,
+      "rag": 0.63
+    },
+    "tags": ["tiny", "local", "edge"],
+    "link": "https://azure.microsoft.com/en-us/products/phi"
+  },
+  {
+    "name": "Groq Llama 3",
+    "provider": "Groq",
+    "cost_input_per_1m": 0.59,
+    "cost_output_per_1m": 0.79,
+    "context_window": 8192,
+    "latency_class": "realtime",
+    "deployment": "cloud",
+    "task_scores": {
+      "code": 0.82,
+      "chat": 0.84,
+      "summarize": 0.80,
+      "analysis": 0.78,
+      "translation": 0.72,
+      "rag": 0.75
+    },
+    "tags": ["ultra-fast", "inference-speed", "low-latency"],
+    "link": "https://groq.com/"
+  }
+]
